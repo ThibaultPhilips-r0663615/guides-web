@@ -1,0 +1,79 @@
+@import "./resolutions";
+@import "./fonts";
+@import "./variables";
+@import "./generalStyles";
+@import "./buttons";
+@import "./marginsAndPaddings";
+@import "./listCard";
+@import "./guideListCard";
+@import "./stepByStep";
+@import "./errorMessages";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+@import "./activityCards";
+@import "./utilBar";
+@import "./header";
+@import "./hero";
+@import "./footer";
+@import "./filters";
+
+@import "./home";
+@import "./topicDetail";
+@import "./guideDetail";
+
+:root {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Montserrat-Medium', 'Lato', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 145%;
+    word-break: break-word;
+    background-color: $secondaryTextColor;
+    color: $primaryTextColor;
+    @include sComputer {
+        font-size: 18px;
+    }
+    @include lTablets {
+        font-size: 17px;
+    }
+    @include lTablets {
+        font-size: 16px;
+    }
+    @include lPhone-and-pTablets {
+        font-size: 15px;
+    }
+    @include sPhone {
+        font-size: 14px;
+    }
+
+    body {
+        .v-application {
+            font-family: 'Montserrat-Medium', 'Lato', 'Arial', sans-serif;
+    
+            ul {
+                padding-left: unset;
+            }
+            a {
+                color: unset;
+            }
+            p {
+                margin-bottom: unset;
+            }
+            .v-application--wrap {
+                min-height: unset;
+            }
+        }
+    }
+}
+
+.clearfix { zoom: 1; }
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

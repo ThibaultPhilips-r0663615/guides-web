@@ -1,0 +1,22 @@
+.lol-general-error-message {
+    max-width: 600px;
+    margin: 0 auto;
+    .lol-general-error-message-container {
+        border: 2px #be0d00 solid;
+        background-color: #fad8d6;
+        border-radius: 20px;
+        padding: 20px;
+        .lol-general-error-message-container-text {
+            text-align: center;
+            font-size: 80%;
+            font-weight: bolder;
+            color: $thirdColor;
+        }
+    }
+}
+.lol-general-error-message-centered {
+    margin: 0 auto;
+}
+.lol-general-error-message-large {
+    max-width: 60%;
+}

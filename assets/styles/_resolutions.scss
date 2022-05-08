@@ -1,0 +1,56 @@
+$xsPhone: 380px;
+$sPhone: 480px;
+$xlPhone: 599px;
+$sTablets: 700px;
+$lPhone-and-ptablets: 850px;
+$lTablets: 1024px;
+$sComputer: 1200px;
+$lComputer: 1400px;
+
+@mixin xsPhone {
+  @media (max-width: #{$xsPhone}) {
+    @content;
+  }
+}
+
+@mixin sPhone {
+    @media (max-width: #{$sPhone}) {
+      @content;
+    }
+}
+
+@mixin xlPhone {
+  @media (max-width: #{$xlPhone}) {
+    @content;
+  }
+}
+
+@mixin sTablets {
+    @media (max-width: #{$sTablets}) {
+      @content;
+    }
+}
+
+@mixin lPhone-and-pTablets {
+    @media (max-width: #{$lPhone-and-ptablets}) {
+      @content;
+    }
+}
+
+@mixin lTablets {
+    @media (max-width: #{$lTablets}) {
+      @content;
+    }
+}
+
+@mixin sComputer {
+    @media (max-width: #{$sComputer}) {
+      @content;
+    }
+}
+
+@mixin lComputer {
+  @media (max-width: #{$lComputer}) {
+    @content;
+  }
+}

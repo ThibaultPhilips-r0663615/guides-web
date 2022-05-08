@@ -1,0 +1,779 @@
+.lol-topic-detail {
+    width: 100%;
+    .lol-topic-detail-content {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        z-index: 100;
+        @include lComputer {
+            width: 80%;
+        }
+        @include sComputer {
+            width: 90%;
+        }
+        @include lTablets {
+            display: block;
+        }
+        @include lPhone-and-pTablets {
+            width: 95%;
+        }
+        @include xsPhone {
+            width: 98%;
+        }
+        .lol-topic-detail-content-information {
+            width: 72%;
+            margin-right: 3%;
+            z-index: 200;
+            @include lTablets {
+                width: 100%;
+                margin-right: unset;
+            }
+            .lol-topic-detail-content-information-navigation {
+                width: 100%;
+                margin-top: -92px;
+                display: flex;
+                z-index: 300;
+                border-bottom: 2px solid $primaryTextColor;
+                @include sComputer {
+                    margin-top: -82px;
+                }
+                @include lTablets {
+                    position: absolute;
+                    width: 90%;
+                }
+                @include lPhone-and-pTablets {
+                    width: 95%;
+                    margin-top: -72px;
+                }
+                @include xlPhone {
+                    margin-top: -67px;
+                }
+                @include sPhone {
+                    margin-top: -57px;
+                }
+                @include xsPhone {
+                    margin-top: -47px;
+                }
+                .lol-topic-detail-content-information-navigation-button {
+                    opacity: 1;
+                    height: 90px;
+                    width: 30%;
+                    text-align: center;
+                    background-color: rgba(232, 233, 234, 0.95);
+                    margin-right: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                    cursor: pointer;
+                    overflow: hidden;
+                    @include sComputer {
+                        height: 80px;
+                    }
+                    @include lTablets {
+                        width: 25%;
+                    }
+                    @include lPhone-and-pTablets {
+                        width: 30%;
+                        height: 70px;
+                    }
+                    @include xlPhone {
+                        height: 65px;
+                        margin-right: 20px;
+                    }
+                    @include sPhone {
+                        width: 30%;
+                        height: 55px;
+                        margin-right: 10px;
+                    }
+                    @include xsPhone {
+                        height: 45px;
+                        margin-right: 8px;
+                    }
+                    h2 {
+                        color: $primaryTextColor;
+                        font-weight: 400;
+                        font-size: 150%;
+                        @include sComputer {
+                            font-size: 140%;
+                        }
+                        @include sComputer {
+                            font-size: 130%;
+                        }
+                        @include sPhone {
+                            font-size: 120%;
+                        }
+                        @include xsPhone {
+                            font-size: 100%;
+                        }
+                    }
+                    &.active {
+                        background-color: rgba(73, 73, 74, 0.95);
+                        h2 {
+                            color: $secondaryTextColor;
+                        }
+                    }
+                }
+            }
+            .lol-topic-detail-content-information-navigation-button:hover {
+                background-color: rgba(252, 253, 254, 0.95);
+                &.active {
+                    background-color: rgba(53, 53, 54, 0.95);
+                }
+            }
+            .lol-topic-detail-content-information-quick-information {
+                width: 100%;
+                height: 80px;
+                border-bottom: 2px solid $primaryTextColor;
+                background-color: rgba(232, 233, 234, 0.95);
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                box-shadow: 3px 3px 2px #c7c7c7;
+                @include sComputer {
+                    height: 70px;
+                }
+                @include lPhone-and-pTablets {
+                    height: 60px;
+                }
+                @include sPhone {
+                    height: 65px;
+                }
+                @include xsPhone {
+                    height: 75px;
+                }
+                .lol-topic-detail-content-information-quick-information-element:last-child {
+                    border: 0;
+                }
+                .lol-topic-detail-content-information-quick-information-element {
+                    border-right: 2px solid $primaryTextColor;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 25%;
+                    padding: 0 15px;
+                    overflow: hidden;
+                    @include lComputer {
+                        padding: 0 10px;
+                    }
+                    @include sComputer {
+                        padding: 0 10px;
+                    }
+                    @include sPhone {
+                        display: block;
+                        padding: 0 2px;
+                    }
+                    @include xsPhone {
+                        padding: 0 1px;
+                    }
+                    .lol-topic-detail-content-information-quick-information-element-icon {
+                        width: 15%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        @include sPhone {
+                            padding-top: 2px;
+                            width: 100%;
+                            height: 20px;
+                            display: block;
+                            align-items: unset;
+                            text-align: center;
+                            overflow-y: hidden;
+                        }
+                        @include xsPhone {
+                            height: 25px;
+                        }
+                        i {
+                            color: $secondaryColor;
+                            font-size: 160%;
+                            @include lComputer {
+                                font-size: 140%;
+                            }
+                        }
+                    }
+                    .lol-topic-detail-content-information-quick-information-element-text {
+                        width: 85%;
+                        line-height: 100%;
+                        margin-left: 10px;
+                        height: 100%;
+                        @include sPhone {
+                            width: 100%;
+                            margin-left: unset;
+                            text-align: center;
+                            height: 45px;
+                            padding-top: 2px;
+                            padding-bottom: 2px;
+                            overflow: hidden;
+                        }
+                        @include xsPhone {
+                            height: 50px;
+                            padding-top: 1px;
+                            padding-bottom: 1px;
+                        }
+                        p {
+                            font-weight: 400;
+                            font-size: 70%;
+                            color: $thirdTextColor;
+                            overflow-y: hidden;
+                            height: 47%;
+                            display: flex;
+                            align-items: flex-end;
+                            margin-top: 2%;
+                            padding-bottom: 1%;
+                            @include sPhone {
+                                height: 50%;
+                                justify-content: center;
+                                margin-top: unset;
+                                padding-bottom: 1px;
+                            }
+                        }
+                        h2 {
+                            font-weight: bolder;
+                            font-size: 90%;
+                            color: $primaryTextColor;
+                            overflow-y: hidden;
+                            height: 47%;
+                            padding-top: 1%;
+                            margin-bottom: 2%;
+                            @include sPhone {
+                                font-size: 80%;
+                                height: 50%;
+                                padding-top: 1px;
+                                margin-bottom: unset;
+                            }
+                        }
+                    }
+                }
+            }
+            .lol-topic-detail-content-information-body {
+                width: 100%;
+                min-height: 200px;
+                background-color: rgba(232, 233, 234, 0.95);
+                box-shadow: 3px 3px 2px #c7c7c7;
+                .lol-topic-detail-content-information-body-text {
+                    padding: 10px 60px 60px 60px;
+                    @include lComputer {
+                        padding: 10px 40px 40px 40px;
+                    }
+                    @include sComputer {
+                        padding: 5px 30px 30px 30px;
+                    }
+                    @include lPhone-and-pTablets {
+                        padding: 5px 20px 20px 20px;
+                    }
+                    @include xsPhone {
+                        padding: 2px 10px 10px 10px;
+                    }
+                    .lol-topic-detail-content-information-body-text-labels {
+                        margin-bottom: 10px;
+                        display: inline-block;
+                        .lol-label-span {
+                            padding: 3px 10px;
+                            border-radius: 10px;
+                            font-size: 75%;
+                            margin-right: 10px;
+                            line-height: 100%;
+                            margin-top: 10px;
+                            cursor: default;
+                            user-select: none;
+                            display: inline-block;
+                            @include lComputer {
+                                margin-top: 8px;
+                                margin-right: 8px;
+                                padding: 3px 8px;
+                            }
+                            @include sComputer {
+                                margin-top: 6px;
+                                margin-right: 6px;
+                                padding: 2px 7px;
+                            }
+                            @include lPhone-and-pTablets {
+                                margin-top: 5px;
+                                margin-right: 5px;
+                                padding: 2px 5px;
+                                font-size: 70%;
+                            }
+                            @include xlPhone {
+                                margin-top: 8px;
+                                margin-right: 8px;
+                                padding: 3px 8px;
+                            }
+                            @include sPhone {
+                                margin-top: 6px;
+                                margin-right: 6px;
+                                padding: 2px 7px;
+                            }
+                            @include xsPhone {
+                                margin-top: 5px;
+                                margin-right: 5px;
+                                padding: 2px 6px;
+                                font-size: 70%;
+                            }
+                        }
+                    }
+                    h2 {
+                        padding-top: 10px;
+                        font-weight: 400;
+                        font-size: 150%;
+                        @include sComputer {
+                            padding-top: 5px;
+                        }
+                        @include xsPhone {
+                            padding-top: 3px;
+                        }
+                    }
+                    p {
+                        padding-top: 20px;
+                        font-size: 100%;
+                        @include sComputer {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+                .lol-topic-detail-content-information-body-information {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 30px 60px 30px 60px;
+                    @include lComputer {
+                        padding: 20px 40px 40px 40px;
+                    }
+                    @include sComputer {
+                        padding: 10px 30px 30px 30px;
+                    }
+                    @include lPhone-and-pTablets {
+                        padding: 5px 20px 20px 20px;
+                    }
+                    @include xsPhone {
+                        padding: 2px 10px 10px 10px;
+                    }
+                    .lol-topic-detail-content-information-body-information-element:last-child {
+                        margin-left: 30px;
+                        @include sComputer {
+                            margin-left: 25px;
+                        }
+                        @include lPhone-and-pTablets {
+                            margin-left: 20px;
+                        }
+                        @include xlPhone {
+                            margin-left: 15px;
+                        }
+                        @include sPhone {
+                            margin-left: 10px;
+                        }
+                    }
+                    .lol-topic-detail-content-information-body-information-element {
+                        width: 50%;
+                        button {
+                            display: block;
+                            color: $primaryColor;
+                            cursor: pointer;
+                            border: none;
+                            text-decoration: underline;
+                            background-color: transparent;
+                            font-size: 90%;
+                            margin-bottom: 5px;
+                            @include xsPhone {
+                                font-size: 80%;
+                            }
+                        }
+                        button:hover {
+                            color: $primaryTextColor;
+                            text-decoration: none;
+                        }
+                        p {
+                            font-size: 90%;
+                            margin-bottom: 5px;
+                            line-height: 100%;
+                            @include xsPhone {
+                                font-size: 80%;
+                            }
+                        }
+                        .lol-topic-detail-content-information-body-information-element-title {
+                            display: flex;
+                            align-items: center;
+                            i {
+                                color: $primaryTextColor;
+                                font-size: 230%;
+                                @include lComputer {
+                                    font-size: 210%;
+                                }
+                                @include sComputer {
+                                    font-size: 200%;
+                                }
+                                @include xlPhone {
+                                    font-size: 180%;
+                                }
+                            }
+                            h3 {
+                                font-size: 150%;
+                                font-weight: 400;
+                                margin-left: 10px;
+                                @include lComputer {
+                                    font-size: 130%;
+                                }
+                                @include sComputer {
+                                    font-size: 120%;
+                                }
+                                @include lTablets {
+                                    margin-left: 8px;
+                                }
+                                @include lPhone-and-pTablets {
+                                    margin-left: 6px;
+                                }
+                                @include xlPhone {
+                                    margin-left: 4px;
+                                    font-size: 110%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .lol-topic-detail-content-information-body-location {
+                    padding: 0px 60px 60px 60px;
+                    @include lComputer {
+                        padding: 0px 40px 40px 40px;
+                    }
+                    @include sComputer {
+                        padding: 0px 30px 30px 30px;
+                    }
+                    @include lPhone-and-pTablets {
+                        padding: 0px 20px 20px 20px;
+                    }
+                    @include xsPhone {
+                        padding: 0px 10px 10px 10px;
+                    }
+                    h3 {
+                        font-size: 90%;
+                        font-weight: bolder;
+                        span {
+                            font-size: 110%;
+                            font-weight: bolder;
+                            @include sComputer {
+                                font-weight: bolder;
+                                font-size: 100%;
+                            }
+                        }
+                    }
+                    #lol-topic-detail-content-body-location-map {
+                        height: 400px;
+                        width: 100%;
+                        @include xlPhone {
+                            height: 300px;
+                        }
+                        @include sPhone {
+                            height: 250px;
+                        }
+                        @include xsPhone {
+                            height: 200px;
+                        }
+                    }
+                    .lol-topic-detail-content-body-location-map-error {
+                        p {
+                            font-size: 100%;
+                            font-weight: 400;
+                            color: $primaryColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        .lol-topic-detail-content-recommendations {
+            z-index: 200;
+            width: 25%;
+            @include lTablets {
+                width: 100%;
+                margin-top: 30px;
+            }
+            @include sPhone {
+                width: 100%;
+                margin: 30px auto 0 auto;
+            }
+            .lol-topic-detail-content-recommendations-navigation {
+                width: 100%;
+                margin-top: -92px;
+                z-index: 300;
+                border-bottom: 2px solid $primaryTextColor;
+                @include sComputer {
+                    margin-top: -82px;
+                }
+                @include lTablets {
+                    width: 25%;
+                    margin-top: unset;
+                }
+                @include lPhone-and-pTablets {
+                    width: 40%;
+                }
+                @include sPhone {
+                    width: 100%;
+                    margin: 30px auto 0 auto;
+                }
+                .lol-topic-detail-content-recommendations-navigation-button {
+                    height: 90px;
+                    width: 100%;
+                    text-align: center;
+                    background-color: rgba(232, 233, 234, 0.95);
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    overflow: hidden;
+                    flex-direction: column;
+                    cursor: default;
+                    @include sComputer {
+                        height: 80px;
+                    }
+                    @include sPhone {
+                        height: 55px;
+                    }
+                    h2 {
+                        color: $primaryTextColor;
+                        font-weight: 400;
+                        font-size: 120%;
+                        @include lComputer {
+                            font-size: 110%;
+                        }
+                        @include sComputer {
+                            font-size: 110%;
+                        }
+                    }
+                }
+            }
+            .lol-topic-detail-content-recommendations-body {
+                width: 100%;
+                background-color: rgba(232, 233, 234, 0.95);
+                padding: 30px 40px 20px 40px;
+                box-shadow: 3px 3px 2px #c7c7c7;
+                @include sComputer {
+                    padding: 15px 30px 30px 30px;
+                }
+                @include lTablets {
+                    zoom: 1;
+                    display: flex;
+                    padding: 30px 30px 30px 30px;
+                }
+                @include lPhone-and-pTablets {
+                    padding: 10px 10px 10px 10px;
+                }
+                @include sPhone {
+                    display: block;
+                    padding: 25px 20px 10px 20px;
+                }
+                h3 {
+                    font-weight: 400;
+                    font-size: 100%;
+                }
+                .lol-topic-detail-content-recommendations-body-element {
+                    width: 100%;
+                    cursor: pointer;
+                    outline: 0;
+                    margin-bottom: 40px;
+                    display: block;
+                    opacity: 1;
+                    transition: opacity .25;
+                    @include lTablets {
+                        flex: 1;
+                        margin: 1% 0 1% 0;
+                        min-width: 33.3%;
+                        max-width: 33.3%;
+                    }
+                    @include sPhone {
+                        flex: unset;
+                        margin: 0 auto;
+                        min-width: unset;
+                        max-width: unset;
+                        margin-bottom: 20px;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                    .lol-topic-detail-content-recommendations-body-element-header {
+                        width: 100%;
+                        height: 150px;
+                        max-height: 150px;
+                        margin-bottom: 5px;
+                        position: relative;
+                        @include lTablets {
+                            width: 90%;
+                            height: 130px;
+                            max-height: 130px;
+                        }
+                        @include lPhone-and-pTablets {
+                            height: 120px;
+                            max-height: 120px;
+                        }
+                        @include xlPhone {
+                            width: 95%;
+                        }
+                        @include sPhone {
+                            width: 100%;
+                            height: 200px;
+                            max-height: 200px;
+                        }
+                        @include xsPhone {
+                            height: 150px;
+                            max-height: 150px;
+                        }
+                        .image-wrapper {
+                            height: 100%;
+                            width: 100%;
+                            display: flex;
+                            align-content: center;
+                            vertical-align: middle;
+                            justify-content: center;
+                            cursor: pointer;
+                            &.gradient {
+                                background: linear-gradient(135deg, rgba(1,98,1,1) 35%, rgba(0,205,0,1) 100%);
+                            }
+                            .image-wrapper-content {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                align-content: center;
+                                vertical-align: middle;
+                                justify-content: center;
+                                cursor: pointer;
+                                position: relative;
+                                img {
+                                    max-width: 100%;
+                                    max-height: 100%;
+                                    margin: auto;
+                                    display: block;
+                                    position: absolute;
+                                    top:0px; 
+                                    right:0px; 
+                                    bottom:0px; 
+                                    left:0px;
+                                }
+                            }
+                        }
+                    }
+                    .lol-topic-detail-content-recommendations-body-element-text {
+                        @include lTablets {
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+                        @include sPhone {
+                            width: 100%;
+                        }
+                        h3 {
+                            font-weight: 400;
+                            font-size: 90%;
+                            line-height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.lol-topic-detail-foto-album {
+    width: 100%;
+    .lol-topic-detail-foto-album-content {
+        width: 70%;
+        margin: 0 auto;
+        @include lComputer {
+            width: 80%;
+        }
+        @include sComputer {
+            width: 90%;
+        }
+        @include sPhone {
+            width: 95%;
+        }
+        @include xsPhone {
+            width: 98%;
+        }
+        .lol-topic-detail-foto-album-content-element {
+            .lol-topic-detail-foto-album-content-element-image {
+                height: 700px;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                box-shadow: 4px 4px 4px 2px $boxShadowColor;
+                @include lComputer {
+                    height: 650px;
+                }
+                @include sComputer {
+                    height: 600px;
+                }
+                @include lTablets {
+                    height: 550px;
+                }
+                @include lPhone-and-pTablets {
+                    height: 420px;
+                }
+                @include xlPhone {
+                    height: 320px;
+                }
+                @include sPhone {
+                    height: 260px;
+                }
+                @include xsPhone {
+                    height: 220px;
+                }
+                &.hidden {
+                    display: none;
+                }
+                .lol-topic-detail-foto-album-content-element-image-navigation {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    .lol-topic-detail-foto-album-content-element-image-navigation-previous,
+                    .lol-topic-detail-foto-album-content-element-image-navigation-next {
+                        width: 10%;
+                        vertical-align: middle;
+                        display: table;
+                        height: 100%;
+                        i {
+                            display: table-cell;
+                            vertical-align: middle;
+                            text-align: center;
+                            font-size: 200%;
+                            color: rgba(255, 255, 255, 1);
+                            cursor: pointer;
+                        }
+                        i:hover {
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                    .lol-topic-detail-foto-album-content-element-image-navigation-center {
+                        width: 80%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-content: center;
+                        flex-direction: column;
+                        .lol-topic-detail-foto-album-content-element-image-navigation-center-elements {
+                            margin: 0 auto 40px auto;
+                            display: flex;
+                            align-items: center;
+                            @include xlPhone {
+                                margin: 0 auto 30px auto;
+                            }
+                            .lol-topic-detail-foto-album-content-element-image-navigation-center-element {
+                                margin: 0 15px;
+                                height: 6px;
+                                width: 40px;
+                                border-radius: 1px;
+                                background-color: rgba(255, 255, 255, 1);
+                                content: " ";
+                                cursor: pointer;
+                                @include xlPhone {
+                                    height: 4px;
+                                    width: 30px;
+                                }
+                                &.active {
+                                    background-color: rgba(255, 255, 255, 0.5);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

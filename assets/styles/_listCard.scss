@@ -1,0 +1,426 @@
+.lol-list {
+    .lol-list-dialogs {
+        .lol-list-dialogs-remove-alert {
+            position: fixed;
+            z-index: 1000;
+            width: 80%;
+            transform: translate(-50%, 0px);
+            left: 50%;
+            bottom: 0;
+
+            &>div:first-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .lol-list-cards {
+        width: 100%;
+
+        .lol-list-cards-content {
+            width: 70%;
+            margin: 0 auto;
+            position: relative;
+
+            @include lComputer {
+                width: 80%;
+            }
+
+            @include sComputer {
+                width: 97%;
+            }
+
+            @include lPhone-and-pTablets {
+                width: 97%;
+            }
+
+            .lol-list-cards-content-row:after {
+                clear: both;
+            }
+
+            #lol-list-cards-add-a-la-carte {
+                position: absolute;
+                top: -2.5rem;
+                right: 0;
+                color: $secondaryTextColor;
+                background: rgb(41, 54, 24);
+                background: linear-gradient(124deg, rgba(41, 54, 24, 1) 0%, rgba(96, 109, 56, 1) 100%, rgba(41, 54, 24, 1) 293618%);
+                box-shadow: 4px 4px 10px 1px $colorGreen;
+                padding: 0 55px;
+                border-radius: 20px;
+                transition: all .25s;
+
+                @include lPhone-and-pTablets {
+                    transform: translate(-50%, 0);
+                    width: 95%;
+                    left: 50%;
+                }
+
+                &:hover {
+                    opacity: .9;
+                    box-shadow: 6px 6px 15px 2px $colorLightGreen;
+                    transform: scale(1.05);
+
+                    @include lPhone-and-pTablets {
+                        transform: translate(-50%, 0) scale(1.02);
+                    }
+                }
+
+                i {
+                    color: $secondaryTextColor;
+                    font-size: 150%;
+
+                    @include lComputer {
+                        font-size: 140%;
+                    }
+
+                    @include sComputer {
+                        font-size: 130%;
+                    }
+
+                    @include xlPhone {
+                        font-size: 140%;
+                    }
+                }
+            }
+
+            .lol-list-cards-content-row {
+                zoom: 1;
+                display: flex;
+                margin: 0 auto 40px auto;
+                width: 100%;
+
+                @include lComputer {
+                    margin: 0 auto 35px auto;
+                }
+
+                @include sComputer {
+                    margin: 0 auto 30px auto;
+                }
+
+                @include lTablets {
+                    margin: 0 auto 25px auto;
+                }
+
+                @include lPhone-and-pTablets {
+                    display: block;
+                    margin: 0 auto 20px auto;
+                }
+
+                @include xlPhone {
+                    margin: 0 auto 0px auto;
+                }
+
+                .lol-list-cards-content-col {
+                    flex: 1;
+                    margin: 1% 0 1% 0;
+                    min-width: 33.3%;
+                    max-width: 33.3%;
+
+                    @include lPhone-and-pTablets {
+                        margin: 3% 0 3% 0;
+                        min-width: 100%;
+                        max-width: 100%;
+                    }
+
+                    .lol-list-cards-content-col-card {
+                        background-color: #efefef;
+                        box-shadow: 4px 4px 4px 2px $boxShadowColor;
+                        width: 90%;
+                        height: 100%;
+                        margin: 0 auto 0 auto;
+                        //border: 1px solid $primaryTextColor;
+                        position: relative;
+
+                        @include lPhone-and-pTablets {
+                            width: 100%;
+                        }
+
+                        .lol-list-cards-content-col-card-header {
+                            opacity: 1;
+                            width: 100%;
+                            height: 250px;
+                            max-height: 250px;
+                            position: relative;
+                            outline: none;
+                            cursor: pointer;
+
+                            @include lComputer {
+                                height: 220px;
+                                max-height: 220px;
+                            }
+
+                            @include sComputer {
+                                height: 200px;
+                                max-height: 200px;
+                            }
+
+                            @include lTablets {
+                                height: 180px;
+                                max-height: 180px;
+                            }
+
+                            @include lPhone-and-pTablets {
+                                height: 270px;
+                                max-height: 270px;
+                            }
+
+                            @include xlPhone {
+                                height: 270px;
+                                max-height: 270px;
+                            }
+
+                            @include sPhone {
+                                height: 210px;
+                                max-height: 210px;
+                            }
+
+                            @include xsPhone {
+                                height: 170px;
+                                max-height: 170px;
+                            }
+
+                            .image-wrapper {
+                                height: 100%;
+                                width: 100%;
+                                display: flex;
+                                align-content: center;
+                                vertical-align: middle;
+                                justify-content: center;
+                                cursor: pointer;
+
+                                &.gradient {
+                                    background: linear-gradient(135deg, rgba(1, 98, 1, 1) 35%, rgba(0, 205, 0, 1) 100%);
+                                }
+
+                                .image-wrapper-content {
+                                    height: 100%;
+                                    width: 100%;
+                                    display: flex;
+                                    align-content: center;
+                                    vertical-align: middle;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    position: relative;
+
+                                    img {
+                                        max-width: 100%;
+                                        max-height: 100%;
+                                        margin: auto;
+                                        display: block;
+                                        position: absolute;
+                                        top: 0px;
+                                        right: 0px;
+                                        bottom: 0px;
+                                        left: 0px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .lol-list-cards-content-col-card-header:hover {
+                            opacity: 0.9;
+                        }
+
+                        .lol-list-cards-content-col-card-body {
+                            padding: 15px 15px 60px 15px;
+                            margin-bottom: 10px;
+
+                            &.lol-list-cards-content-col-card-body-specification-labels {
+                                display: inline-block;
+                            }
+
+                            @include lComputer {
+                                padding: 10px 12px 50px 12px;
+                                margin-bottom: 8px;
+                            }
+
+                            @include sComputer {
+                                padding: 8px 10px 50px 10px;
+                                margin-bottom: 6px;
+                            }
+
+                            @include lPhone-and-pTablets {
+                                padding: 6px 6px 40px 6px;
+                                margin-bottom: 5px;
+                            }
+
+                            @include xlPhone {
+                                padding: 4px 10px 35px 10px;
+                            }
+
+                            @include sPhone {
+                                padding: 4px 10px 35px 10px;
+                            }
+
+                            @include xsPhone {
+                                padding: 4px 10px 35px 10px;
+                            }
+
+                            h2 {
+                                font-size: 130%;
+                                font-weight: 400;
+
+                                @include lComputer {
+                                    font-size: 120%;
+                                }
+
+                                @include lTablets {
+                                    font-size: 110%;
+                                }
+
+                                @include xlPhone {
+                                    font-size: 120%;
+                                }
+                            }
+
+                            i {
+                                color: $secondaryColor;
+                                font-size: 150%;
+
+                                @include lComputer {
+                                    font-size: 140%;
+                                }
+
+                                @include sComputer {
+                                    font-size: 130%;
+                                }
+
+                                @include xlPhone {
+                                    font-size: 140%;
+                                }
+                            }
+
+                            .lol-label-span {
+                                padding: 3px 10px;
+                                border-radius: 10px;
+                                font-size: 75%;
+                                margin-right: 10px;
+                                line-height: 100%;
+                                margin-top: 10px;
+                                cursor: default;
+                                user-select: none;
+                                display: inline-block;
+
+                                @include lComputer {
+                                    margin-top: 8px;
+                                    margin-right: 8px;
+                                    padding: 3px 8px;
+                                }
+
+                                @include sComputer {
+                                    margin-top: 6px;
+                                    margin-right: 6px;
+                                    padding: 2px 7px;
+                                }
+
+                                @include lPhone-and-pTablets {
+                                    margin-top: 5px;
+                                    margin-right: 5px;
+                                    padding: 2px 5px;
+                                    font-size: 70%;
+                                }
+
+                                @include xlPhone {
+                                    margin-top: 8px;
+                                    margin-right: 8px;
+                                    padding: 3px 8px;
+                                }
+
+                                @include sPhone {
+                                    margin-top: 6px;
+                                    margin-right: 6px;
+                                    padding: 2px 7px;
+                                }
+
+                                @include xsPhone {
+                                    margin-top: 5px;
+                                    margin-right: 5px;
+                                    padding: 2px 6px;
+                                    font-size: 70%;
+                                }
+                            }
+                        }
+
+                        .lol-list-cards-content-col-card-actions {
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+
+                            button[id^="lol-list-cards-content-col-card-actions-read-more"] {
+                                float: right;
+                                color: $secondaryTextColor;
+                                background: rgb(216, 4, 14);
+                                background: linear-gradient(315deg, #d8040e 0%, #ff7200 100%);
+                                box-shadow: 0px 0px 42px 13px #ff7200;
+                                padding: 0 25px;
+                                border-radius: 20px;
+                                transition: opacity .25s, transform .25s, box-shadow .25s;
+                                box-shadow: none;
+
+                                &:hover {
+                                    opacity: .9;
+                                    transform: scale(1.05);
+                                    box-shadow: 0px 0px 2px 1px #ffffff, 0px 0px 5px 4px #ff7200, 0px 0px 10px 2px #d8040e
+                                }
+
+                                i {
+                                    color: $secondaryTextColor;
+                                    font-size: 150%;
+
+                                    @include lComputer {
+                                        font-size: 140%;
+                                    }
+
+                                    @include sComputer {
+                                        font-size: 130%;
+                                    }
+
+                                    @include xlPhone {
+                                        font-size: 140%;
+                                    }
+                                }
+                            }
+
+
+                            button[id^="lol-list-cards-content-col-card-actions-delete"] {
+                                color: $secondaryTextColor;
+                                box-shadow: 0px 0px 42px 13px #ffffff;
+                                border-radius: 20px;
+                                transition: opacity .25s, transform .25s, box-shadow .25s;
+                                box-shadow: none;
+                                margin-right: 1rem;
+
+                                &:hover {
+                                    opacity: .9;
+                                    transform: scale(1.05);
+                                    box-shadow: 0px 0px 10px 2px #ffffff
+                                }
+
+                                i {
+                                    color: $secondaryTextColor;
+                                    font-size: 150%;
+                                    background: linear-gradient(315deg, #d8040e 0%, #ff7200 100%);
+                                    background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+
+                                    @include lComputer {
+                                        font-size: 140%;
+                                    }
+
+                                    @include sComputer {
+                                        font-size: 130%;
+                                    }
+
+                                    @include xlPhone {
+                                        font-size: 140%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

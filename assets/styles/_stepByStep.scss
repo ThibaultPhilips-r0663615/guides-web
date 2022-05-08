@@ -1,0 +1,75 @@
+.lol-step-by-step-topics {
+    width: 100%;
+    .lol-step-by-step-topics-content {
+        width: 70%;
+        margin: 0 auto;
+        @include lComputer {
+            width: 80%;
+        }
+        @include sComputer {
+            width: 90%;
+        }
+        @include lPhone-and-pTablets {
+            width: 95%;
+        }
+        .lol-step-by-step-topics-content-row {
+            width: 100%;
+            display: flex;
+            @include xlPhone {
+                display: block;
+            }
+            .lol-step-by-step-topics-content-col:first-child {
+                margin-left: 0;
+            }
+            .lol-step-by-step-topics-content-col:last-child {
+                margin-right: 0;
+            }
+            .lol-step-by-step-topics-content-col {
+                margin: 0 2.5%;
+                width: 21.25%;
+                @include xlPhone {
+                    width: 100%;
+                    margin: 0;
+                }
+                .lol-step-by-step-topics-content-col-step {
+                    @include xlPhone {
+                        padding: 20px 0;
+                    }
+                    @include sPhone {
+                        padding: 10px 0;
+                    }
+                    .lol-step-by-step-topics-content-col-step-header{
+                        i {
+                            font-size: 200%;
+                            color: $secondaryColor;
+                            display: block;
+                            margin-bottom: 10px;
+                            @include sPhone {
+                                margin-bottom: 8px;
+                            }
+                            @include xsPhone {
+                                margin-bottom: 6px;
+                            }
+                        }
+                        h3 {
+                            font-weight: 400;
+                            line-height: 150%;
+                            font-size: 130%;
+                            display: block;
+                            margin-bottom: 10px;
+                            text-transform: uppercase;
+                            @include sPhone {
+                                margin-bottom: 8px;
+                            }
+                        }
+                    }
+                    .lol-step-by-step-topics-content-col-step-body {
+                        p {
+                            font-size: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

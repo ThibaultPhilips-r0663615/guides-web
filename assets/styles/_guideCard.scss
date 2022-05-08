@@ -1,0 +1,174 @@
+.lol-guide-card {
+    background-color: #F0F0F0;
+    width: 100%;
+    margin-bottom: 60px;
+    display: flex;
+    height: 550px;
+    position: relative;
+
+    .lol-guide-card-left {
+        flex: 45;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+
+        .lol-guide-card-left-image {
+            width: 80%;
+            height: 100%;
+            position: relative;
+
+            .lol-guide-card-left-image-left {
+                width: 20%;
+                background: linear-gradient(90deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 0) 100%);
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            .lol-guide-card-left-image-right {
+                width: 20%;
+                background: linear-gradient(270deg, rgba(240, 240, 240, 1) 0%, rgba(240, 240, 240, 0) 100%);
+                height: 100%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+
+            .image-wrapper {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-content: center;
+                vertical-align: middle;
+                justify-content: center;
+
+                .image-wrapper-content {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-content: center;
+                    vertical-align: middle;
+                    justify-content: center;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        margin: auto;
+                        display: block;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        left: 0px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .lol-guide-card {
+        flex: 55;
+        height: 100%;
+        position: relative;
+        margin-left: 40px;
+
+        .lol-guide-card-general {
+            margin-top: 40px;
+
+            h2 {
+                font-size: 2rem;
+                color: $secondaryColor;
+                text-align: left;
+                text-transform: uppercase;
+                font-family: 'BebasNeue';
+                letter-spacing: 1.5px;
+            }
+
+            .lol-guide-card-general-languages {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                vertical-align: middle;
+
+                .lol-guide-card-general-languages-logo {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                .lol-guide-card-general-languages-text {
+                    font-size: 1rem;
+                    flex: 1;
+                    font-family: 'Montserrat-Light';
+
+                    span {
+                        margin-left: 1%;
+
+                        &:not(:last-child) {
+                            &::after {
+                                content: ','
+                            }
+                        }
+                    }
+                }
+            }
+
+            .lol-guide-card-general-description {
+                margin-top: 20px;
+                max-width: 70ch;
+                font-size: 1rem;
+                font-family: 'Montserrat-Light';
+            }
+        }
+
+        .lol-guide-card-contact {
+            margin-top: 60px;
+
+            h2 {
+                font-size: 1.8rem;
+                color: $secondaryColor;
+                text-align: left;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+                font-family: 'BebasNeue';
+                letter-spacing: 1.5px;
+            }
+
+            .lol-guide-card-contact-element {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                vertical-align: middle;
+
+                .lol-guide-card-general-languages-logo {
+                    height: 20px;
+                    width: 20px;
+                }
+
+                p,
+                a {
+                    font-size: 1rem;
+                    margin-left: 1%;
+                    font-family: 'Montserrat-Light';
+                }
+
+                a {
+                    cursor: pointer;
+                }
+
+                a.hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

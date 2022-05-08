@@ -1,0 +1,121 @@
+/* ------------------------- */
+/* Normal buttons */
+/* ------------------------- */
+.btn:link,
+.btn:visited,
+.btn {
+    padding: 10px 30px 10px 30px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 120%;
+    text-decoration: none;
+    color: $secondaryTextColor;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s;
+    transition: background-color 0.2s, border 0.2s;
+    cursor: pointer;
+}
+.btn-full:link,
+.btn-full:visited,
+.btn-full {
+    background-color: $primaryColor;
+    border: 1px solid $primaryColor;
+    margin-right: 15px;
+}
+.btn-ghost-white:link,
+.btn-ghost-white:visited,
+.btn-ghost-white {
+    border: 1px solid #fff;
+    color: $secondaryTextColor;
+}
+.btn-ghost-to-full:link,
+.btn-ghost-to-full:visited,
+.btn-ghost-to-full {
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+    background-color: transparent;
+}
+.btn-full:hover,
+.btn-full:active {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+}
+.btn-ghost-white:hover,
+.btn-ghost-white:active {
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
+}
+.btn-ghost-red:hover,
+.btn-ghost-red:active {
+    color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+}
+.btn-ghost-to-full:hover,
+.btn-ghost-to-full:active {
+    color: $secondaryTextColor;
+    border: 1px solid $primaryColor;
+    background-color: $primaryColor;
+}
+
+/* ------------------------- */
+/* General link */
+/* ------------------------- */
+%general-link {
+    color:$primaryColor;
+    text-decoration: underline;
+    cursor: pointer;
+    -webkit-transition: color 0.2s, -webkit-text-decoration 0.2s;
+    transition: color 0.2s, -webkit-text-decoration 0.2s;
+    transition: color 0.2s, text-decoration 0.2s;
+    transition: color 0.2s, text-decoration 0.2s, -webkit-text-decoration 0.2s;
+}
+.general-link-in-text:link,
+.general-link-in-text:visited,
+.general-link-in-text:not([href]) {
+    @extend %general-link;
+    display: inline;
+}
+.general-link-stand-alone:link,
+.general-link-stand-alone:visited,
+.general-link-stand-alone:not([href]) {
+    @extend %general-link;
+    display: block;
+}
+.general-link-in-text:hover,
+.general-link-in-text:active,
+.general-link-stand-alone:hover,
+.general-link-stand-alone:active,
+.general-link-in-text:not([href]):hover,
+.general-link-stand-alone:not([href]):hover {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+/* ------------------------- */
+/* FORM buttons */
+/* ------------------------- */
+input[type="submit"] {
+    padding: 10px 30px 10px 30px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 120%;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: $primaryColor;
+    color: $secondaryTextColor;
+    border-radius: 200px;
+    margin: 20px 15px 0 0;
+    border: 1px solid $primaryColor;
+    margin-right: 15px;
+    -webkit-transition: background-color 0.2s, border 0.2s;
+    transition: background-color 0.2s, border 0.2s;
+}
+input[type="submit"]:hover {
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
+}
+input[type="submit"]:disabled {
+    background-color: $primaryDisabledColor;
+    border: 1px solid $primaryDisabledColor;
+    cursor: default;
+}

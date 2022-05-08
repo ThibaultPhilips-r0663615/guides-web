@@ -1,0 +1,145 @@
+.lol-about-us {
+    .lol-about-us-content {
+        width: 55%;
+        margin: 0 auto;
+        @include lComputer {
+            width: 70%;
+        }
+        @include lPhone-and-pTablets {
+            width: 80%;
+        }
+        @include xlPhone {
+            width: 90%;
+        }
+        @include xsPhone {
+            width: 95%;
+        }
+        .lol-about-us-content-text {
+            padding-top: 40px;
+            line-height: 145%;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+            position: relative;
+            @include lComputer {
+                padding-top: 30px;
+            }
+            @include sComputer {
+                padding-top: 25px;
+            }
+            &:before {
+                font-size: 20rem;
+                position: absolute;
+                top: 60px;
+                left: -140px;
+                content: "🙶";
+                opacity: .1;
+                color: #000;
+            }
+            &:after {
+                content: "";
+            }
+        }
+    }
+}
+
+.lol-future-walks {
+    width: 100%;
+    .lol-future-walks-content {
+        width: 100%;
+        .lol-future-walks-content-elements {
+            padding-top: 40px;
+            @include lComputer {
+                padding-top: 30px;
+            }
+            @include sComputer {
+                padding-top: 25px;
+            }
+            .lol-future-walks-content-element {
+                background-position: top;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 600px;
+                width: 100%;
+                position: relative;
+                @include sComputer {
+                    height: 550px;
+                }
+                @include lPhone-and-pTablets {
+                    height: 500px;
+                }
+                @include xlPhone {
+                    height: 450px;
+                }
+                @include sPhone {
+                    height: 400px;
+                }
+                @include xsPhone {
+                    height: 350px;
+                }
+                .lol-future-walks-content-element-body {
+                    padding: 40px;
+                    position: absolute;
+                    width: 70%;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    color: $secondaryTextColor;
+                    background-color: rgba(0, 0, 0, 0.3);
+                    height: 80%;
+                    overflow: hidden;
+                    @include lComputer {
+                        width: 80%;
+                        padding: 30px;
+                    }
+                    @include sComputer {
+                        width: 90%;
+                        padding: 20px;
+                    }
+                    @include sPhone {
+                        padding: 10px;
+                    }
+                    h1 {
+                        font-size: 200%;
+                        font-weight: 400;
+                        padding-bottom: 60px;
+                        margin-bottom: 10px;
+                        max-height: 25%;
+                        overflow: hidden;
+                        line-height: 100%;
+                        @include lComputer {
+                            padding-bottom: 50px;
+                        }
+                        @include sComputer {
+                            padding-bottom: 40px;
+                        }
+                        @include sPhone {
+                            font-size: 180%;
+                        }
+                        @include xsPhone {
+                            font-size: 150%;
+                        }
+                    }
+                    a {
+                        position: absolute;
+                        bottom: 40px;
+                        left: 40px;
+                        @include lComputer {
+                            bottom: 30px;
+                            left: 30px;
+                        }
+                        @include sComputer {
+                            bottom: 20px;
+                            left: 20px;
+                        }
+                        @include sPhone {
+                            bottom: 10px;
+                            left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.lol-filters {
+    width: 100%;
+    .lol-filters-content {
+        width: 70%;
+        margin: 0 auto;
+        @include lComputer {
+            width: 80%;
+        }
+        @include sComputer {
+            width: 90%;
+        }
+        @include lPhone-and-pTablets {
+            width: 95%;
+        }
+        .lol-filters-content-filter {
+            margin-bottom: 20px;
+            @include lComputer {
+                margin-bottom: 15px;
+            }
+            @include sComputer {
+                margin-bottom: 10px;
+            }
+            @include xlPhone {
+                margin-bottom: 15px;
+            }
+            label {
+                font-size: 110%;
+                font-weight: 400;
+                display: block;
+                margin-bottom: 5px;
+                @include xlPhone {
+                    font-size: 130%;
+                }
+            }
+            input {
+                height: 40px;
+                width: 30%;
+                font-size: 100%;
+                padding: 2px 0px 2px 8px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                outline: 0;
+                @include sComputer {
+                    padding: 1px 0px 1px 6px;
+                }
+                @include lTablets {
+                    padding: 0px 0px 0px 6px;
+                }
+                @include xlPhone {
+                    width: 60%;
+                    height: 35px;
+                }
+                @include sPhone {
+                    width: 70%;
+                }
+            }
+            .lol-filters-content-filter-label-list {
+                .lol-label-span {
+                    display: inline-block;
+                    padding: 3px 10px;
+                    border-radius: 10px;
+                    font-size: 75%;
+                    margin-right: 10px;
+                    line-height: 100%;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    user-select: none;
+                    outline: none;
+                }
+            }
+        }
+        .lol-filter-button {
+            border: none;
+            background-color: transparent;
+            color: $secondaryColor;
+            font-size: 120%;
+            font-family: 'Lato', 'Arial', sans-serif;
+            font-weight: 300;
+            text-decoration: underline;
+            outline: 0;
+            cursor: pointer;
+        }
+        .lol-filter-button:hover {
+            text-decoration: none;
+            color: $primaryTextColor;
+        }
+    }
+}

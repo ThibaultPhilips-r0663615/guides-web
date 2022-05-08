@@ -1,0 +1,279 @@
+/* ---------------------------------------- */
+/* MARGINS TOP */
+/* ---------------------------------------- */
+.marginTop10 {
+    margin-top: 10px;
+}
+.marginTop20 {
+    margin-top: 20px;
+}
+.marginTop30 {
+    margin-top: 30px;
+}
+.marginTop40 {
+    margin-top: 40px;
+}
+.marginTop60 {
+    margin-top: 60px;
+}
+.marginTop80 {
+    margin-top: 80px;
+}
+
+
+/* ---------------------------------------- */
+/* MARGINS BOT */
+/* ---------------------------------------- */
+.marginBottom10 {
+    margin-bottom: 10px;
+}
+.marginBottom20 {
+    margin-bottom: 20px;
+}
+.marginBottom30 {
+    margin-bottom: 30px;
+}
+.marginBottom40 {
+    margin-bottom: 40px;
+}
+.marginBottom60 {
+    margin-bottom: 60px;
+}
+.marginBottom80 {
+    margin-bottom: 80px;
+}
+/* ---------------------------------------- */
+/* RESPONSIVE MARGINS */
+/* ---------------------------------------- */
+.marginTopLarge {
+    margin-top: 80px;
+    @include sComputer {
+        margin-top: 70px;
+    }
+    @include lTablets {
+        margin-top: 60px;
+    }
+    @include lPhone-and-pTablets {
+        margin-top: 50px;
+    }
+    @include sPhone {
+        margin-top: 40px;
+    }
+}
+.marginTopMedium {
+    margin-top: 60px;
+    @include sComputer {
+        margin-top: 50px;
+    }
+    @include lTablets {
+        margin-top: 40px;
+    }
+    @include lPhone-and-pTablets {
+        margin-top: 30px;
+    }
+    @include sPhone {
+        margin-top: 30px;
+    }
+}
+.marginTopSmall {
+    margin-top: 40px;
+    @include sComputer {
+        margin-top: 30px;
+    }
+    @include lTablets {
+        margin-top: 30px;
+    }
+    @include lPhone-and-pTablets {
+        margin-top: 20px;
+    }
+    @include sPhone {
+        margin-top: 15px;
+    }
+}
+.marginBottomLarge {
+    margin-bottom: 80px;
+    @include sComputer {
+        margin-bottom: 70px;
+    }
+    @include lTablets {
+        margin-bottom: 60px;
+    }
+    @include lPhone-and-pTablets {
+        margin-bottom: 50px;
+    }
+    @include sPhone {
+        margin-bottom: 40px;
+    }
+}
+.marginBottomMedium {
+    margin-bottom: 60px;
+    @include sComputer {
+        margin-bottom: 50px;
+    }
+    @include lTablets {
+        margin-bottom: 40px;
+    }
+    @include lPhone-and-pTablets {
+        margin-bottom: 30px;
+    }
+    @include sPhone {
+        margin-bottom: 30px;
+    }
+}
+.marginBottomSmall {
+    margin-bottom: 40px;
+    @include sComputer {
+        margin-bottom: 30px;
+    }
+    @include lTablets {
+        margin-bottom: 30px;
+    }
+    @include lPhone-and-pTablets {
+        margin-bottom: 20px;
+    }
+    @include sPhone {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* ---------------------------------------- */
+/* PADDING TOP */
+/* ---------------------------------------- */
+.paddingTop10 {
+    padding-top: 10px;
+}
+.paddingTop20 {
+    padding-top: 20px;
+}
+.paddingTop30 {
+    padding-top: 30px;
+}
+.paddingTop40 {
+    padding-top: 40px;
+}
+.paddingTop60 {
+    padding-top: 60px;
+}
+.paddingTop80 {
+    padding-top: 80px;
+}
+
+
+/* ---------------------------------------- */
+/* PADDING BOT */
+/* ---------------------------------------- */
+.paddingBottom10 {
+    padding-bottom: 10px;
+}
+.paddingBottom20 {
+    padding-bottom: 20px;
+}
+.paddingBottom30 {
+    padding-bottom: 30px;
+}
+.paddingBottom40 {
+    padding-bottom: 40px;
+}
+.paddingBottom60 {
+    padding-bottom: 60px;
+}
+.paddingBottom80 {
+    padding-bottom: 80px;
+}
+
+
+/* ---------------------------------------- */
+/* RESPONSIVE PADDING */
+/* ---------------------------------------- */
+.paddingTopLarge {
+    padding-top: 80px;
+    @include sComputer {
+        padding-top: 70px;
+    }
+    @include lTablets {
+        padding-top: 60px;
+    }
+    @include lPhone-and-pTablets {
+        padding-top: 50px;
+    }
+    @include sPhone {
+        padding-top: 40px;
+    }
+}
+.paddingTopMedium {
+    padding-top: 60px;
+    @include sComputer {
+        padding-top: 50px;
+    }
+    @include lTablets {
+        padding-top: 40px;
+    }
+    @include lPhone-and-pTablets {
+        padding-top: 30px;
+    }
+    @include sPhone {
+        padding-top: 30px;
+    }
+}
+.paddingTopSmall {
+    padding-top: 30px;
+    @include sComputer {
+        padding-top: 30px;
+    }
+    @include lTablets {
+        padding-top: 20px;
+    }
+    @include lPhone-and-pTablets {
+        padding-top: 20px;
+    }
+    @include sPhone {
+        padding-top: 15px;
+    }
+}
+
+.paddingBottomLarge {
+    padding-bottom: 80px;
+    @include sComputer {
+        padding-bottom: 70px;
+    }
+    @include lTablets {
+        padding-bottom: 60px;
+    }
+    @include lPhone-and-pTablets {
+        padding-bottom: 50px;
+    }
+    @include sPhone {
+        padding-bottom: 40px;
+    }
+}
+.paddingBottomMedium {
+    padding-bottom: 60px;
+    @include sComputer {
+        padding-bottom: 50px;
+    }
+    @include lTablets {
+        padding-bottom: 40px;
+    }
+    @include lPhone-and-pTablets {
+        padding-bottom: 30px;
+    }
+    @include sPhone {
+        padding-bottom: 30px;
+    }
+}
+.paddingBottomSmall {
+    padding-bottom: 30px;
+    @include sComputer {
+        padding-bottom: 30px;
+    }
+    @include lTablets {
+        padding-bottom: 20px;
+    }
+    @include lPhone-and-pTablets {
+        padding-bottom: 20px;
+    }
+    @include sPhone {
+        padding-bottom: 15px;
+    }
+}
